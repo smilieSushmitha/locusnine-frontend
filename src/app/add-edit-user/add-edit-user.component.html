@@ -1,0 +1,31 @@
+<img  src="../assets/ico_close.svg" class="close" (click)="close()"/>
+<div>
+  <h1 style="font-weight: lighter;" *ngIf="!isEditUser"> Add user </h1>
+  <h1 style="font-weight: lighter;" *ngIf="isEditUser"> Edit user </h1>
+
+  <form [formGroup]="addEditUserForm">
+    <mat-form-field appearance="outline" class="example-full-width" >
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Sushmitha">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width" >
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="test@gmail.com">
+    </mat-form-field>
+    <mat-radio-group formControlName="isAdmin" aria-label="Select an option" color="primary">
+      <mat-radio-button value="true">Admin</mat-radio-button>
+      <mat-radio-button value="false">Customer Executive</mat-radio-button>
+    </mat-radio-group>
+    <mat-form-field appearance="outline" class="example-full-width" >
+      <mat-label>Mobile Number (Optional)</mat-label>
+      <input matInput  formControlName="mobileNumber" placeholder="9877789086">
+    </mat-form-field>
+    <button mat-flat-button *ngIf="!isEditUser" class="example-full-width addUser" color="primary" (click)="addUser()" [disabled]="!addEditUserForm.valid">
+      ADD USER
+    </button>
+    <button mat-flat-button *ngIf="isEditUser" class="example-full-width addUser" color="primary" (click)="editUser()" [disabled]="!addEditUserForm.valid">
+      EDIT USER
+    </button>
+  </form>
+</div>
+

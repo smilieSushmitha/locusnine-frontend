@@ -1,0 +1,97 @@
+mat-toolbar{
+  background: #282828;
+  color: white;
+}
+.spacing{
+  margin-left: 5%;
+  margin-right: 0.5%;
+}
+.notificationSpacing{
+  margin-left: 37%;
+  margin-right: 2%;
+}
+.nameSpacing{
+  margin-left: 0.5%;
+  margin-right: 2%;
+}
+body {
+  background-color: #404443;
+}
+.ico_users {
+  background-color: white;
+  -webkit-mask: url(../assets/ico_users_orange.svg) no-repeat center;
+  mask: url(../assets/ico_users_orange.svg) no-repeat center;
+}
+mat-card{
+  background: white;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  margin-top: 1.5%;
+}
+.usersIconSpacing{
+  margin-left: 2%;
+  margin-right: 0.5%;
+}
+.notificationSpacing{
+  position: absolute;
+  right: 15%;
+}
+.userIconSpacing{
+  position: absolute;
+  right: 11%;
+}
+.userNameSpacing{
+  position: absolute;
+  right: 3%;
+  top:-1%;
+}
+.usersSpacing{
+  font-size: 140%;
+  color: #3E4241;
+  font-weight: lighter;
+  position: absolute;
+  top: 22%;
+}
+.addUser{
+  position: absolute;
+  top: 25%;
+  right: 1.5%;
+}
+table {
+  width: 100%;
+}
+.mat-row:nth-child(odd){
+  background-color:#FFFFFF;
+}
+
+.mat-row:nth-child(even){
+  background-color:#FCFCFC;
+}
+.mat-header-cell{
+  font-weight: bold;
+  color: black;
+}
+
+.search{
+  position: absolute;
+  right: 11.5%;
+}
+
+mat-form-field {
+  width: 300px;
+  font-size: 10px;
+}
+.status{
+  margin-left:5%;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+td.mat-column-action {
+  width: 80px;
+  padding-right: 1rem!important;
+}
+
+
